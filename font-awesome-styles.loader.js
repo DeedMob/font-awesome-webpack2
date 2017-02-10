@@ -23,7 +23,7 @@ module.exports = function(content) {
     source = start + styles.filter(function(style) {
         return config.styles[style];
     }).map(function(style) {
-        return "@import \"~font-awesome/less/" + style + ".less\";";
+        return "@import \"./node_modules/font-awesome/less/" + style + ".less\";";
     }).join("\n");
     return source;
 };
